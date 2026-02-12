@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For You</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <span> Wait lang po bub </span>
+    </div>
+    <div class="page active" id="page1">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/561/561127.png"
+        alt="Mail"
+      />
+      <h2>
+        Open your mail
+        <i class="fa-solid fa-envelope-open-text"></i>
+      </h2>
+    </div>
+    <div class="page" id="page2">
+      <h1>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        Before you proceed…
+      </h1>
+      <p>Ikalma mo muna sarili mo bwahahaha</p>
+      <button class="btn-yes" data-next="3">
+        I'm ready
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+    <div class="page" id="page3">
+      <img
+        src="https://media.tenor.com/N0kmcRoelpIAAAAM/whatsapp.gif"
+        alt="Say yes"
+      />
+      <h1>
+        Will you be my date on Heart's Day?
+        <i class="fa-solid fa-heart"></i>
+      </h1>
+
+      <div class="buttons">
+        <button class="btn-yes" data-next="4">
+          <i class="fa-solid fa-heart-circle-check"></i>
+          YES
+        </button>
+        <button class="btn-no" id="noBtn">
+          <i class="fa-solid fa-circle-xmark"></i>
+          NO
+        </button>
+      </div>
+    </div>
+
+    <div class="page" id="page4">
+      <img
+        src="https://i.pinimg.com/originals/be/cf/5e/becf5e32cf343aa54adec65a653be799.gif"
+        alt="Yay"
+      />
+
+      <h1>
+        <i class="fa-solid fa-calendar-heart"></i>
+        Yayy! I knew it
+      </h1>
+
+      <div class="details">
+        <p>
+          <i class="fa-solid fa-calendar-days"></i>
+          <strong>Date:</strong> Feb 14, 2026
+        </p>
+        <p>
+          <i class="fa-solid fa-clock"></i>
+          <strong>Time:</strong> 3:00 PM
+        </p>
+        <p>
+          <i class="fa-solid fa-shirt"></i>
+          <strong>Outfit color:</strong> Black
+        </p>
+        <p>
+          <i class="fa-solid fa-user"></i>
+          <strong>Bring:</strong> Yourself
+        </p>
+        <div class="receipt-section">
+          <h2><i class="fa-solid fa-receipt"></i> Confirmation Receipt</h2>
+          <a href="receipt.png" target="_blank">
+            <span>Open image</span>
+          </a>
+
+          <p class="receipt-text">
+            Please open the receipt above and send it back to me for
+            confirmation
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

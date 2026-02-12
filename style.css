@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #e67fef, #fad0c4);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.page {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.page.active {
+  display: block;
+}
+
+h1,
+h2,
+p {
+  margin-bottom: 15px;
+}
+
+img {
+  width: 120px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-yes {
+  background: #ff4d6d;
+  color: #fff;
+}
+
+.btn-no {
+  background: #333;
+  color: #fff;
+  position: absolute;
+}
+
+.buttons {
+  margin-top: 20px;
+  position: relative;
+  height: 200px;
+}
+
+.details {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.loader {
+  position: fixed;
+  inset: 0;
+  background: #e67fef;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.loader span {
+  font-size: 22px;
+  color: #fff;
+  animation: pulse 1s infinite;
+}
+.receipt-section a {
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
