@@ -10,7 +10,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .page {
@@ -31,9 +31,14 @@ p {
 }
 
 img {
-  width: 120px;
-  margin-bottom: 20px;
+  height: 100px;
+  width: 100px;
   cursor: pointer;
+}
+.mail {
+  animation: bounce 1s infinite;
+  height: 200px;
+  width: 200px;
 }
 
 button {
@@ -65,6 +70,10 @@ button {
   background: rgba(255, 255, 255, 0.2);
   padding: 20px;
   border-radius: 15px;
+
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .loader {
